@@ -76,6 +76,18 @@ section .title{
   color: var(--clr);
   animation: wavey 4s ease-in-out infinite;
 }
+
+.title > h4{
+  position: absolute;
+}
+.title h4:nth-child(1){
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+}
+.title h4:nth-child(2){
+  color: var(--clr);
+  animation: wavey 4s ease-in-out infinite;
+}
 .background{
   height: 100vh;
   width: 100vw;
@@ -84,16 +96,19 @@ section .title{
   z-index: -10;
 }
 .background > img {
-  opacity: 0.6;
+  opacity: 0.2;
   height: 250px;
   width: 250px;
   position: absolute;
 }
 .background > img:nth-child(1){
+  
   top: 5vh;
   left: 6vw;
 }
 .background > img:nth-child(2){
+  height: 150px;
+  width: 150px;
   top: 5vh;
   right: 6vw;
 }

@@ -1,6 +1,7 @@
 import "./navbar.css"
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { FaFan } from "react-icons/fa";
 const NavBar = () => {
     return (
             <motion.nav
@@ -11,7 +12,9 @@ const NavBar = () => {
             > 
                 <input type="checkbox" id="nav-check"/>
                     <div className="nav-header">
-                        <h4 data-text="&nbsp;Air Quality">&nbsp;Air Quality&nbsp;</h4>
+                        <h4 data-text="&nbsp;Air">&nbsp;Air&nbsp;</h4>
+                        <FaFan className={`icon fan-animation`} />
+                        <h4 data-text="&nbsp;QUALITY">&nbsp;QUALITY&nbsp;</h4>
                     </div>
                     <div className="nav-btn">
                         <label htmlFor="nav-check">
