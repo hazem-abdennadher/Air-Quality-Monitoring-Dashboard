@@ -1,0 +1,333 @@
+:root{
+    --temperature-clr:#ff4560;
+    --humidity-clr: #008ffb ;
+    --co2-clr:#00e396;
+    --gas-clr:#feb019;
+    --settings-clr:#383838;
+}
+
+.cards-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.temperature{
+    border:5px solid var(--temperature-clr); 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;       
+}
+.humidity{
+    border:5px solid var(--humidity-clr);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.co2{
+    border:5px solid var(--co2-clr);    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.gas{
+    border:5px solid var(--gas-clr);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.temperature::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 10px;
+    border-radius: 100% 0 0 100%;
+    transition: 0.4s;
+    background-color: var(--temperature-clr);
+}
+
+.humidity::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 10px;
+    border-radius: 100% 0 0 100%;
+    transition: 0.4s;
+    background-color: var(--humidity-clr);
+}
+
+.co2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 10px;
+    border-radius: 100% 0 0 100%;
+    transition: 0.4s;
+    background-color: var(--co2-clr);
+}
+
+.gas::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 10px;
+    border-radius: 100% 0 0 100%;
+    transition: 0.4s;
+    background-color: var(--gas-clr);
+}
+.card{
+    position: relative;
+    background-color: #fff;
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    cursor: default;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    flex: 1 0 21%;
+    margin: 20px 10px;
+}
+.card:hover{
+    transform: scale(0.9);
+    box-shadow: rgba(0, 0, 0, 0.24) 2px 5px 12px;
+}
+/*===================header===============================*/ 
+.card-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+
+}
+
+
+.card-header > .card-info{
+    width: 100%;
+}
+.card-header > .card-info > .icon{
+    font-size: 2rem;
+}
+.temperature .card-header > .card-info > .icon{
+    color: var(--temperature-clr);
+}
+.humidity .card-header > .card-info > .icon{
+    color: var(--humidity-clr);
+}
+.co2 .card-header > .card-info > .icon{
+    color: var(--co2-clr);
+}
+.gas .card-header > .card-info > .icon{
+    color: var(--gas-clr);
+}
+
+.card-header > .card-info > p{
+    font-size: 1rem;
+}
+.co2 .card-header .card-data{   
+    border: 4px solid var(--co2-clr);	
+}
+.temperature .card-header .card-data{   
+    border: 4px solid var(--temperature-clr);	
+}
+.gas .card-header .card-data{   
+    border: 4px solid var(--gas-clr);	
+}
+.humidity .card-header .card-data{   
+    border: 4px solid var(--humidity-clr);	
+}
+
+
+.card-header > .card-data {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*===================data===========================*/
+.card-header > .card-data>p {
+    font-size: 0.8rem;
+    font-weight: 200;
+    font-weight: bold;
+}
+.temperature .card-header .card-data>p{
+    color: var(--temperature-clr);
+}
+.humidity .card-header .card-data>p{
+    color: var(--humidity-clr);
+}
+.co2 .card-header .card-data>p{
+    color: var(--co2-clr);
+}
+.gas .card-header .card-data>p{
+    color: var(--gas-clr);
+}
+
+.card-content{
+    width: 100%;   
+    padding-bottom: 20px;
+    padding-left:   10px;
+    padding-right: 10px;
+    text-align: center;
+}
+.danger{
+    color: #ed5249;
+}
+.warning{
+    color: #f0ad4e;
+}
+.success{
+    color: #4bb543;
+}
+
+
+
+
+.fan{
+    border:5px solid var(--settings-clr); 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+}
+.fan-animation{
+
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.fan::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 10px;
+    border-radius: 100% 0 0 100%;
+    transition: 0.4s;
+    background-color: var(--settings-clr);
+}
+.settings{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    row-gap: 20px;
+}
+.settings > .icon{
+    font-size: 5rem;
+    color: var(--settings-clr);
+}
+.settings > p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.settings > p > .ON{
+    font-weight: bolder;
+    color: #4bb543;
+}
+.settings > p > .OFF{
+    font-weight: bolder;
+    color: #ff4560;
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .card{
+        flex: 1 0 50%;
+        margin: 20px 10px;
+    }
+    .card-header{
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .card-header > .card-info{
+        width: 100%;
+    }
+    .card-header > .card-info > .icon{
+        font-size: 2rem;
+    }
+    .card-header > .card-info > p{
+        font-size: 1.2rem;
+    }
+    .card-header > .card-data {
+        border-radius: 50%;
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-header > .card-data > p{
+        font-size: 0.8rem;
+    }
+    .card-content{
+        padding-bottom: 10px;
+        padding-left:   10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    .settings{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        row-gap: 20px;
+    }
+    .settings > .icon{
+        font-size: 3rem;
+        color: var(--settings-clr);
+    }
+    .settings > p{
+        font-size: 0.8rem;
+    }
+    .settings > p > .ON{
+        font-weight: bolder;
+        color: #4bb543;
+    }
+    .settings > p > .OFF{
+        font-weight: bolder;
+        color: #ff4560;
+    }
+}
+
+

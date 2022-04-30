@@ -1,0 +1,25 @@
+.four-charts{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.chart-item{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 22px 35px -16px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    flex: 1 0 41%;
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .chart-item{
+        width: 90%;
+    }
+}
+

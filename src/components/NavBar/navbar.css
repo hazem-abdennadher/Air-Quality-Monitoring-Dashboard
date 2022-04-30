@@ -1,0 +1,172 @@
+nav{
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1000;
+}
+nav> #nav-check {
+  display: none;
+}
+
+
+nav> .nav-header {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: 100%;
+}
+nav > .nav-header h4{
+  position: relative;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+
+
+nav> .nav-btn {
+  display: none;
+}
+
+nav> .nav-links {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  font-size: 18px;
+}
+
+
+
+
+@media (max-width:600px) {
+  nav> .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  nav> .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  nav> .nav-btn > label:hover,nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  nav> .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid black;
+  }
+  nav> .nav-links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10% 10%;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  
+  nav> #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  nav> #nav-check:checked ~ .nav-links {
+    height: calc(350px - 50px);
+    overflow-y: auto;
+  }
+}
+
+/* tablet size */
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  nav> .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  nav> .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  nav> .nav-btn > label:hover,nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  nav> .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid black;
+  }
+  nav> .nav-links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10% 10%;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  nav> #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  nav> #nav-check:checked ~ .nav-links {
+    height: calc(350px - 50px);
+    overflow-y: auto;
+  }
+}
+
+
+ul{
+  position: relative;
+  display: flex;
+  gap:15px
+}
+ul li{
+  position: relative;
+  list-style: none;
+}
+ul li a {
+  position: relative;
+  font-size: 1.5rem;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+
+ul li a::before{
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0%;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+  border-right: 4px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+}
+ul li a:hover::before{
+  width: 100%;
+  filter: drop-shadow(0 0 15px var(--clr));
+}
