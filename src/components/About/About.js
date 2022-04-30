@@ -26,8 +26,8 @@ const About = () => {
                   })
                 }}
               >
-                Air pollution is the world`s largest environmental and public health challenge today. Air pollution has a negative impact on human health, climate, and ecosystems. The air is polluted by the release of toxic gases from industry, emissions from vehicles, and increased concentrations of harmful gases and particles in the atmosphere, especially in laboratories. This requires measurements and analysis to monitor air quality in real-time so that appropriate decisions can be made quickly. This article introduces a real-time autonomous air quality monitoring system that includes various parameters such as carbon dioxide (CO2), temperature, humidity, and gas. The Internet of Things is now widely used in all industries and also plays an important role in air quality monitoring systems. The Internet of Things, integrated with cloud computing, provides a new way to better manage data from various sensors collected and transmitted by ARM-based Raspberry Pi single-board nanocomputers.
-              </SplitText>
+                Today, air pollution is the world's most serious environmental and public health problem. the climate, and ecosystems are all harmed by air pollution. The release of poisonous gases from industry, automobile emissions, and higher concentrations of harmful gases and particles in the atmosphere, particularly in laboratories, necessitates a real-time air quality monitoring and analysis system so relevant decisions may be made swiftly. thus we created this  MERN-Stack web application where we used our custom API to store the data we capture from different sensors attached to a raspberry pi on a cloud database so all the information can be accessed very easily, then we show real-time data alongside some statistics in our website.
+                DISCLAIMER : currently we're using fake data to show the potential usage of our application in real life.</SplitText>
             </div>
             
         </motion.section>
