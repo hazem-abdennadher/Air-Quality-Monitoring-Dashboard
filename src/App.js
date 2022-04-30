@@ -27,10 +27,10 @@ function App() {
       </div>
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.key}>
-          <Route path="/" element={<MyCharts />} />
-          <Route path="/statistics" element={<Statistics />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/MERN-Air-Quality-Monitoring" element={<MyCharts />} />
+          <Route path="/MERN-Air-Quality-Monitoring/statistics" element={<Statistics />} />
+          <Route path="/MERN-Air-Quality-Monitoring/about" element={<About />} />
+          <Route path="/MERN-Air-Quality-Monitoring/contact" element={<Contact/>} />
         </Routes>
       </AnimatePresence>
     </>

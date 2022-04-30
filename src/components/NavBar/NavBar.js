@@ -22,22 +22,22 @@ const NavBar = () => {
                     </div>
                 <ul className="nav-links">
                     <li style={{"--clr":"#ff4560"}}>
-                        <Link to={"/"} href="#"  data-text="&nbsp;Monitoring" >
+                        <Link to={"/MERN-Air-Quality-Monitoring/"} href="#"  data-text="&nbsp;Monitoring" >
                             &nbsp;Monitoring&nbsp;
                         </Link>
                     </li>
                     <li style={{"--clr":"#008ffb"}}>
-                        <Link to={"/statistics"} href="/statistics"  data-text="&nbsp;Statistics">
+                        <Link to={"/MERN-Air-Quality-Monitoring/statistics"} href="/statistics"  data-text="&nbsp;Statistics">
                             &nbsp;Statistics&nbsp;
                         </Link>
                     </li>
                     <li style={{"--clr":"#00e396"}} >
-                        <Link to={"/about"} href="/about" data-text="&nbsp;About">
+                        <Link to={"/MERN-Air-Quality-Monitoring/about"} href="/about" data-text="&nbsp;About">
                             &nbsp;About&nbsp;
                         </Link>
                     </li>
                     <li style={{"--clr":"#feb019"}}>
-                        <Link to={"/contact"} href="/contact" data-text="&nbsp;Contact">
+                        <Link to={"/MERN-Air-Quality-Monitoring/contact"} href="/contact" data-text="&nbsp;Contact">
                            &nbsp;Contact&nbsp;
                         </Link>
                     </li>
