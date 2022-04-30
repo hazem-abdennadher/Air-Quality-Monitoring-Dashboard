@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MERN-Air-Quality-Monitoring/static/css/main.fe706070.css",
+    "main.js": "/MERN-Air-Quality-Monitoring/static/js/main.f78e18f6.js",
+    "index.html": "/MERN-Air-Quality-Monitoring/index.html",
+    "main.fe706070.css.map": "/MERN-Air-Quality-Monitoring/static/css/main.fe706070.css.map",
+    "main.f78e18f6.js.map": "/MERN-Air-Quality-Monitoring/static/js/main.f78e18f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe706070.css",
+    "static/js/main.f78e18f6.js"
+  ]
+}
