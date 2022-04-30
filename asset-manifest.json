@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/MERN-Air-Quality-Monitoring/static/css/main.fe706070.css",
-    "main.js": "/MERN-Air-Quality-Monitoring/static/js/main.f78e18f6.js",
+    "main.css": "/MERN-Air-Quality-Monitoring/static/css/main.6b21765d.css",
+    "main.js": "/MERN-Air-Quality-Monitoring/static/js/main.e52b648f.js",
+    "static/media/Frame2.png": "/MERN-Air-Quality-Monitoring/static/media/Frame2.6b3aa0e8f458bc5dd9ad.png",
     "index.html": "/MERN-Air-Quality-Monitoring/index.html",
-    "main.fe706070.css.map": "/MERN-Air-Quality-Monitoring/static/css/main.fe706070.css.map",
-    "main.f78e18f6.js.map": "/MERN-Air-Quality-Monitoring/static/js/main.f78e18f6.js.map"
+    "main.6b21765d.css.map": "/MERN-Air-Quality-Monitoring/static/css/main.6b21765d.css.map",
+    "main.e52b648f.js.map": "/MERN-Air-Quality-Monitoring/static/js/main.e52b648f.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe706070.css",
-    "static/js/main.f78e18f6.js"
+    "static/css/main.6b21765d.css",
+    "static/js/main.e52b648f.js"
   ]
 }
