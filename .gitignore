@@ -41,3 +41,89 @@ yarn-debug.log*
 yarn-error.log*
 /.changelog
 .npm/
+
+
+.env
+node_modules 
+
+
+# dependencies
+frontend/node_modules
+frontend/.pnp
+frontend/.pnp.js
+
+# testing
+frontend/coverage
+
+# production
+frontend/build
+
+# misc
+frontend/.DS_Store
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+
+
+
+frontend/.idea/
+frontend/.vscode/
+frontend/node_modules/
+frontend/build/
+frontend/.DS_Store
+frontend/*.tgz
+frontend/my-app*
+frontend/template/src/__tests__/__snapshots__/
+frontend/lerna-debug.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.changelog
+frontend/.npm/
+
+
+# dependencies
+backend/node_modules
+backend/.pnp
+backend/.pnp.js
+
+# testing
+backend/coverage
+
+# production
+backend/build
+
+# misc
+backend/.DS_Store
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
+
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+
+
+
+
+backend/.idea/
+backend/.vscode/
+backend/node_modules/
+backend/build/
+backend/.DS_Store
+backend/*.tgz
+backend/my-app*
+backend/template/src/__tests__/__snapshots__/
+backend/lerna-debug.log
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/.changelog
+backend/.npm/
